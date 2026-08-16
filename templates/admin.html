@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard — Registrations</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body style="padding: 40px; background: #0a0b10;">
+
+    <div style="max-width: 1100px; margin: 0 auto;">
+        <h1 style="color: #fff; margin-bottom: 8px;">Attendee Registrations</h1>
+        <p style="color: #cbd5e1; margin-bottom: 24px;">Live attendee entries collected from your Instagram link.</p>
+
+        <table style="width: 100%; border-collapse: collapse; background: rgba(22, 27, 38, 0.95); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; color: #fff; overflow: hidden;">
+            <thead>
+                <tr style="background: rgba(255, 42, 42, 0.2); text-align: left;">
+                    <th style="padding: 14px;">ID</th>
+                    <th style="padding: 14px;">Full Name</th>
+                    <th style="padding: 14px;">Email</th>
+                    <th style="padding: 14px;">Age</th>
+                    <th style="padding: 14px;">Phone</th>
+                    <th style="padding: 14px;">Sport</th>
+                    <th style="padding: 14px;">Date Registered</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in registrations %}
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <td style="padding: 12px 14px;">{{ row[0] }}</td>
+                    <td style="padding: 12px 14px; font-weight: bold;">{{ row[1] }}</td>
+                    <td style="padding: 12px 14px;">{{ row[2] }}</td>
+                    <td style="padding: 12px 14px;">{{ row[3] }}</td>
+                    <td style="padding: 12px 14px;">{{ row[4] }}</td>
+                    <td style="padding: 12px 14px; color: #ff2a2a; font-weight: bold;">{{ row[5] }}</td>
+                    <td style="padding: 12px 14px; color: #cbd5e1; font-size: 0.85rem;">{{ row[6] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

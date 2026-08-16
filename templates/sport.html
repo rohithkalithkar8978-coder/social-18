@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ sport.title }} — SOCIAL 18</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body style="background-color: #0a0b10; background-image: linear-gradient(rgba(10, 11, 16, 0.88), rgba(10, 11, 16, 0.96)), url('{{ sport.bg_image }}'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; color: #fff;">
+
+    <header class="navbar">
+        <div class="logo-group">
+            <span class="logo">SOCIAL <span class="highlight-red">18</span></span>
+            <span class="age-badge">AGES 14–18 ONLY</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/" class="btn-back">← Back to Arena</a>
+        </nav>
+    </header>
+
+    <main class="content" style="padding-top: 140px; padding-bottom: 60px;">
+        <div class="sport-container" style="max-width: 900px; margin: 0 auto; text-align: left;">
+            <div class="apple-glass-panel">
+                <span class="category-pill">DISCIPLINE ARCHITECTURE</span>
+                <h1 class="sport-title-hero" style="margin-top: 10px;">{{ sport.title }}</h1>
+                <p class="tagline-sub">{{ sport.tagline }}</p>
+
+                <div class="panel-body">
+                    <div class="info-card-bubble">
+                        <div class="bubble-icon">🧬</div>
+                        <h3>Health & Physiology</h3>
+                        <p>{{ sport.importance }}</p>
+                    </div>
+
+                    <div class="info-card-bubble">
+                        <div class="bubble-icon">⚡</div>
+                        <h3>Key Athletic Benefits</h3>
+                        <ul>
+                            {% for benefit in sport.benefits %}
+                                <li>{{ benefit }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="info-card-bubble">
+                        <div class="bubble-icon">🏟️</div>
+                        <h3>Infrastructure & Scheduling</h3>
+                        <p>{{ sport.arrangements }}</p>
+                    </div>
+                </div>
+
+                <div class="panel-footer" style="text-align: center; margin-top: 28px;">
+                    <button type="button" class="btn-primary-glow" onclick="openModal()">Register for {{ sport.title }} Training</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Registration Modal -->
+    <div id="regModal" class="modal-overlay">
+        <div class="modal-card">
+            <button type="button" class="modal-close" onclick="closeModal()">×</button>
+            <h2>FREE EVENT REGISTRATION</h2>
+            <p class="modal-sub">Fill in your details to reserve your spot.</p>
+            
+            <form action="/register" method="POST" class="reg-form">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <div class="form-row">
+                    <input type="number" name="age" min="14" max="18" placeholder="Age (14-18)" required>
+                    <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+                </div>
+                <select name="sport" required>
+                    <option value="{{ sport.title }}" selected>{{ sport.title }}</option>
+                    <option value="Boxing">Boxing</option>
+                    <option value="Running">Running</option>
+                    <option value="Cycling">Cycling</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Powerlifting">Powerlifting</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Tennis">Tennis</option>
+                </select>
+                <button type="submit" class="btn-primary-glow submit-btn">Confirm Free Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() { document.getElementById('regModal').classList.add('active'); }
+        function closeModal() { document.getElementById('regModal').classList.remove('active'); }
+    </script>
+</body>
+</html>
