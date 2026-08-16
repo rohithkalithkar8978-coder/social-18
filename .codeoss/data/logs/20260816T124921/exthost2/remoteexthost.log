@@ -1,0 +1,16 @@
+2026-08-16 12:49:37.205 [info] Extension host with pid 1536 started
+2026-08-16 12:49:37.206 [error] Error: EEXIST: file already exists, open '/home/rohithkalithkar/.codeoss/data/User/workspaceStorage/7d8b0a12/vscode.lock'
+2026-08-16 12:49:37.207 [info] Lock '/home/rohithkalithkar/.codeoss/data/User/workspaceStorage/7d8b0a12/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-08-16 12:49:37.210 [info] Lock '/home/rohithkalithkar/.codeoss/data/User/workspaceStorage/7d8b0a12/vscode.lock': The lock does not look stale, elapsed: 1714 ms, giving up.
+2026-08-16 12:49:37.242 [info] Lock '/home/rohithkalithkar/.codeoss/data/User/workspaceStorage/7d8b0a12-1/vscode.lock': Lock acquired.
+2026-08-16 12:49:37.613 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-08-16 12:49:37.615 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-08-16 12:49:37.615 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 12:49:37.616 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 12:49:38.684 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-08-16 12:49:40.257 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-08-16 12:49:40.258 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-08-16 12:49:41.381 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2687
+2026-08-16 12:49:42.919 [info] Extension host terminating: received terminate message from renderer
+2026-08-16 12:49:42.930 [info] Lock '/home/rohithkalithkar/.codeoss/data/User/workspaceStorage/7d8b0a12-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-08-16 12:49:43.122 [info] Extension host with pid 1536 exiting with code 0

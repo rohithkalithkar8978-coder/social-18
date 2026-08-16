@@ -1,0 +1,67 @@
+[2026-08-15T16:56:27.990Z] Activating Agent Skill Installer
+[2026-08-15T16:56:28.006Z] appName: Code OSS for Cloud Shell, ideType: 6
+[2026-08-15T16:56:28.006Z] Profile antigravity-ide is NOT active
+[2026-08-15T16:56:28.006Z] Profile antigravity is NOT active
+[2026-08-15T16:56:28.006Z] Profile jetski is NOT active
+[2026-08-15T16:56:28.006Z] Profile cursor is NOT active
+[2026-08-15T16:56:28.006Z] Profile copilot is NOT active
+[2026-08-15T16:56:28.006Z] Profile gemini-code-assist is active
+[2026-08-15T16:56:38.789Z] Checking skills for Gemini Code Assist in /home/rohithkalithkar/.gemini/skills. Force=false
+[2026-08-15T16:56:38.794Z] No previous manifest found or it was invalid.
+[2026-08-15T16:56:38.804Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills
+[2026-08-15T16:56:38.820Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/accidental-data-loss-prevention
+[2026-08-15T16:56:38.821Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-ai-ml
+[2026-08-15T16:56:38.822Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-bigframes
+[2026-08-15T16:56:38.822Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-data-transfer-service
+[2026-08-15T16:56:38.822Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-graph
+[2026-08-15T16:56:38.823Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-sql
+[2026-08-15T16:56:38.823Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/building-data-apps
+[2026-08-15T16:56:38.824Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/data-autocleaning
+[2026-08-15T16:56:38.824Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/dataform-bigquery
+[2026-08-15T16:56:38.824Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/dbt-bigquery
+[2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/discovering-gcp-data-assets
+[2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/enforcing-resource-attribution
+[2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/federate-lakehouse-catalog
+[2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcloud-auth-verification
+[2026-08-15T16:56:38.826Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-composer-troubleshooting
+[2026-08-15T16:56:38.826Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-data-pipelines
+[2026-08-15T16:56:38.826Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-dataflow
+[2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-managed-airflow-migrations
+[2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-pipeline-orchestration
+[2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-pipeline-resource-provisioning
+[2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-spark
+[2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcs-security-assessment
+[2026-08-15T16:56:38.828Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/managing-python-dependencies
+[2026-08-15T16:56:38.828Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/ml-best-practices
+[2026-08-15T16:56:38.828Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/notebook-guidance
+[2026-08-15T16:56:38.830Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/skill-repair
+[2026-08-15T16:56:38.893Z] Copied skill skill-repair to /home/rohithkalithkar/.gemini/skills/skill-repair
+[2026-08-15T16:56:38.908Z] Copied skill dbt-bigquery to /home/rohithkalithkar/.gemini/skills/dbt-bigquery
+[2026-08-15T16:56:38.911Z] Copied skill federate-lakehouse-catalog to /home/rohithkalithkar/.gemini/skills/federate-lakehouse-catalog
+[2026-08-15T16:56:38.912Z] Copied skill enforcing-resource-attribution to /home/rohithkalithkar/.gemini/skills/enforcing-resource-attribution
+[2026-08-15T16:56:38.914Z] Copied skill gcloud-auth-verification to /home/rohithkalithkar/.gemini/skills/gcloud-auth-verification
+[2026-08-15T16:56:38.915Z] Copied skill gcp-composer-troubleshooting to /home/rohithkalithkar/.gemini/skills/gcp-composer-troubleshooting
+[2026-08-15T16:56:38.916Z] Copied skill gcp-data-pipelines to /home/rohithkalithkar/.gemini/skills/gcp-data-pipelines
+[2026-08-15T16:56:38.920Z] Copied skill dataform-bigquery to /home/rohithkalithkar/.gemini/skills/dataform-bigquery
+[2026-08-15T16:56:38.926Z] Copied skill ml-best-practices to /home/rohithkalithkar/.gemini/skills/ml-best-practices
+[2026-08-15T16:56:38.927Z] Copied skill bigquery-sql to /home/rohithkalithkar/.gemini/skills/bigquery-sql
+[2026-08-15T16:56:38.930Z] Copied skill accidental-data-loss-prevention to /home/rohithkalithkar/.gemini/skills/accidental-data-loss-prevention
+[2026-08-15T16:56:38.930Z] Copied skill discovering-gcp-data-assets to /home/rohithkalithkar/.gemini/skills/discovering-gcp-data-assets
+[2026-08-15T16:56:38.932Z] Copied skill managing-python-dependencies to /home/rohithkalithkar/.gemini/skills/managing-python-dependencies
+[2026-08-15T16:56:38.932Z] Copied skill notebook-guidance to /home/rohithkalithkar/.gemini/skills/notebook-guidance
+[2026-08-15T16:56:38.951Z] Copied skill bigquery-data-transfer-service to /home/rohithkalithkar/.gemini/skills/bigquery-data-transfer-service
+[2026-08-15T16:56:38.954Z] Copied skill data-autocleaning to /home/rohithkalithkar/.gemini/skills/data-autocleaning
+[2026-08-15T16:56:38.956Z] Copied skill gcp-pipeline-resource-provisioning to /home/rohithkalithkar/.gemini/skills/gcp-pipeline-resource-provisioning
+[2026-08-15T16:56:38.961Z] Copied skill gcp-managed-airflow-migrations to /home/rohithkalithkar/.gemini/skills/gcp-managed-airflow-migrations
+[2026-08-15T16:56:38.969Z] Copied skill bigquery-bigframes to /home/rohithkalithkar/.gemini/skills/bigquery-bigframes
+[2026-08-15T16:56:38.980Z] Copied skill gcp-spark to /home/rohithkalithkar/.gemini/skills/gcp-spark
+[2026-08-15T16:56:38.987Z] Copied skill gcp-pipeline-orchestration to /home/rohithkalithkar/.gemini/skills/gcp-pipeline-orchestration
+[2026-08-15T16:56:38.991Z] Copied skill gcp-dataflow to /home/rohithkalithkar/.gemini/skills/gcp-dataflow
+[2026-08-15T16:56:38.994Z] Copied skill bigquery-graph to /home/rohithkalithkar/.gemini/skills/bigquery-graph
+[2026-08-15T16:56:38.999Z] Copied skill building-data-apps to /home/rohithkalithkar/.gemini/skills/building-data-apps
+[2026-08-15T16:56:39.030Z] Copied skill bigquery-ai-ml to /home/rohithkalithkar/.gemini/skills/bigquery-ai-ml
+[2026-08-15T16:56:39.040Z] Copied skill gcs-security-assessment to /home/rohithkalithkar/.gemini/skills/gcs-security-assessment
+[2026-08-15T16:56:39.044Z] Finished copying skills to /home/rohithkalithkar/.gemini/skills. Updated 26 skills.
+[2026-08-15T16:56:39.049Z] Installation completed. Manifest updated.
+[2026-08-15T16:56:39.051Z] Syncing telemetry hooks for gemini-code-assist. Telemetry enabled: true
+[2026-08-15T16:56:39.077Z] Hook plugin for gemini-code-assist installed successfully to /home/rohithkalithkar/.gemini/config/plugins/googlecloudtools.datacloud_telemetry

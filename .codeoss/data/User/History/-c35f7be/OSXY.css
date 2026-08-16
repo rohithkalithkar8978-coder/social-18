@@ -1,0 +1,110 @@
+:root {
+  --bg-dark: #000000;
+  --text-primary: #f5f5f7;
+  --text-secondary: #86868b;
+  --apple-accent: #2997ff;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --font-apple: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-apple);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+#canvas3d { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2; }
+
+.bg-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background-size: cover; background-position: center;
+  z-index: -1; opacity: 0; transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s ease;
+  filter: contrast(1.1) brightness(0.85);
+}
+
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.2rem 8%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  position: fixed; width: 100%; top: 0; z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.5px; }
+.logo span { color: var(--text-secondary); }
+.nav-tag { font-size: 0.85rem; color: var(--text-secondary); font-weight: 400; }
+
+.btn-apple {
+  background: #ffffff; color: #000000; border: none;
+  padding: 0.5rem 1.1rem; border-radius: 980px;
+  font-size: 0.85rem; font-weight: 500; cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-apple:hover { opacity: 0.9; transform: scale(1.02); }
+
+/* Main Content */
+.content { text-align: center; padding: 120px 5% 60px; max-width: 1100px; margin: 0 auto; }
+
+.eyebrow { color: var(--apple-accent); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+
+.hero-title h1 {
+  font-size: 4rem; font-weight: 600; letter-spacing: -1.5px;
+  background: linear-gradient(180deg, #ffffff 0%, #86868b 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.hero-title p { color: var(--text-secondary); font-size: 1.25rem; max-width: 650px; margin: 0 auto 3rem; font-weight: 400; line-height: 1.4; }
+
+/* Grid Selector */
+.sports-grid { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+
+.sport-card {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  padding: 1.2rem 1.8rem; border-radius: 16px;
+  display: flex; flex-direction: column; align-items: flex-start;
+  min-width: 140px; cursor: pointer;
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sport-card:hover {
+  background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+}
+.sport-num { font-size: 0.75rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.3rem; }
+.sport-name { font-size: 1.1rem; font-weight: 500; letter-spacing: -0.3px; }
+
+/* Apple Spec Sheet Modal */
+.details-card {
+  position: relative; background: rgba(18, 18, 20, 0.85);
+  border: 1px solid var(--glass-border); border-radius: 24px;
+  padding: 3rem; text-align: left;
+  backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden { display: none; }
+.close-btn { position: absolute; top: 24px; right: 24px; background: rgba(255, 255, 255, 0.1); border: none; color: var(--text-secondary); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 0.9rem; }
+.close-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.2); }
+
+.details-header h2 { font-size: 2.5rem; font-weight: 600; letter-spacing: -1px; margin-bottom: 2rem; }
+
+.specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.spec-box { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.5rem; border-radius: 16px; }
+.spec-box.full-width { grid-column: span 2; }
+
+.spec-box h4 { font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; margin-bottom: 0.8rem; }
+.spec-box p, .spec-box ul { font-size: 1.05rem; color: var(--text-primary); line-height: 1.5; font-weight: 400; }
+.spec-box ul { list-style-position: inside; }

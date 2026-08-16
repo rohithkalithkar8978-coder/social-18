@@ -1,0 +1,76 @@
+:root {
+    --bg-dark: #0a0b10;
+    --glass-bg: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --accent-red: #ff2a2a;
+    --accent-red-glow: rgba(ff, 42, 42, 0.4);
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+body { background-color: var(--bg-dark); color: var(--text-main); overflow-x: hidden; }
+
+/* Header & Logos */
+.navbar {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+    width: 90%; max-width: 1200px; display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 28px; background: rgba(10, 11, 16, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border); border-radius: 50px; z-index: 1000;
+}
+
+.logo-group { display: flex; align-items: center; gap: 12px; }
+.logo { font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; color: #fff; text-decoration: none; }
+.highlight-red { color: var(--accent-red); }
+.age-badge {
+    font-size: 0.7rem; font-weight: 800; background: rgba(255, 42, 42, 0.15); border: 1px solid var(--accent-red);
+    color: var(--accent-red); padding: 4px 10px; border-radius: 12px; letter-spacing: 1px;
+}
+
+.nav-links a, .btn-back { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+.btn-back { background: rgba(255,255,255,0.08); padding: 8px 18px; border-radius: 20px; transition: 0.3s; border: 1px solid var(--glass-border); }
+.btn-back:hover { background: var(--accent-red); border-color: var(--accent-red); }
+.btn-glow { background: var(--accent-red); padding: 8px 20px; border-radius: 20px; font-weight: 700!important; box-shadow: 0 0 15px var(--accent-red-glow); }
+
+/* Landing Section */
+.content { padding: 140px 20px 80px; max-width: 1200px; margin: 0 auto; text-align: center; }
+.hero-section { margin-bottom: 60px; }
+.age-pill { display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-radius: 20px; font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 20px; }
+.hero-title { font-size: 4rem; font-weight: 900; letter-spacing: 3px; }
+.gradient-text { background: linear-gradient(135deg, #fff 30%, var(--accent-red)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-subtitle { color: var(--text-muted); font-size: 1.2rem; margin-top: 12px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.section-heading { font-size: 1.8rem; letter-spacing: 2px; margin-bottom: 30px; }
+
+/* Apple-Style Glass Grid */
+.apple-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: left; }
+.apple-card {
+    position: relative; background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(16px);
+    border-radius: 28px; padding: 32px; text-decoration: none; color: #fff; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; min-height: 240px;
+}
+.apple-card:hover { transform: translateY(-8px) scale(1.02); border-color: var(--accent-red); box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 30px var(--accent-red-glow); }
+.card-number { font-size: 0.85rem; font-weight: 800; color: var(--accent-red); opacity: 0.8; }
+.card-title { font-size: 1.8rem; font-weight: 800; margin: 10px 0 6px; }
+.card-tagline { font-size: 0.95rem; color: var(--text-muted); line-height: 1.4; }
+.card-arrow { align-self: flex-end; font-size: 1.4rem; color: var(--accent-red); transition: transform 0.3s ease; }
+.apple-card:hover .card-arrow { transform: translateX(6px); }
+
+/* Apple-Style Sport Page Layout */
+.sport-page { min-height: 100vh; background-size: cover; background-position: center; background-attachment: fixed; display: flex; align-items: center; justify-content: center; padding: 120px 20px 60px; }
+.sport-container { max-width: 900px; width: 100%; }
+.apple-glass-panel { background: rgba(10, 11, 16, 0.82); border: 1px solid var(--glass-border); backdrop-filter: blur(30px); border-radius: 36px; padding: 48px; box-shadow: 0 40px 80px rgba(0,0,0,0.9); }
+.category-pill { font-size: 0.75rem; font-weight: 800; color: var(--accent-red); letter-spacing: 2px; }
+.sport-title-hero { font-size: 3.5rem; font-weight: 900; margin: 8px 0; }
+.tagline-sub { font-size: 1.2rem; color: var(--text-muted); }
+
+.panel-body { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 36px 0; }
+.info-card-bubble { background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 24px; padding: 24px; backdrop-filter: blur(10px); }
+.bubble-icon { font-size: 1.8rem; margin-bottom: 12px; }
+.info-card-bubble h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: #fff; }
+.info-card-bubble p, .info-card-bubble ul { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+.info-card-bubble ul { list-style-position: inside; }
+
+.panel-footer { text-align: center; margin-top: 20px; }
+.btn-primary-glow { display: inline-block; padding: 16px 36px; background: var(--accent-red); color: #fff; text-decoration: none; font-weight: 800; border-radius: 30px; box-shadow: 0 0 25px var(--accent-red-glow); transition: 0.3s ease; }
+.btn-primary-glow:hover { transform: scale(1.04); box-shadow: 0 0 35px rgba(255, 42, 42, 0.7); }

@@ -1,0 +1,46 @@
+:root {
+  --bg-dark: #07090e;
+  --neon-cyan: #00f0ff;
+  --neon-orange: #ff4500;
+  --glass-bg: rgba(255, 255, 255, 0.07);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg-dark); color: #fff; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
+
+#canvas3d { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2; }
+.bg-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background-size: cover; background-position: center;
+  z-index: -1; opacity: 0; transition: opacity 0.8s ease-in-out;
+}
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; backdrop-filter: blur(10px); }
+.logo { font-size: 1.8rem; font-weight: 900; font-style: italic; }
+.logo span { color: var(--neon-orange); }
+.badge { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 700; }
+
+.content { text-align: center; padding: 3rem 5%; }
+.hero-title h1 { font-size: 3.5rem; font-style: italic; background: linear-gradient(90deg, #fff, var(--neon-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-title p { color: #a0a5b5; margin-top: 0.5rem; }
+
+.sports-grid { display: flex; justify-content: center; gap: 1.5rem; margin: 3rem 0; flex-wrap: wrap; }
+.sport-card {
+  background: var(--glass-bg); border: 1px solid rgba(255,255,255,0.15); padding: 1.5rem 2.5rem;
+  border-radius: 12px; font-size: 1.3rem; font-weight: 800; cursor: pointer;
+  backdrop-filter: blur(15px); transition: all 0.3s ease;
+}
+.sport-card:hover { transform: translateY(-8px) scale(1.05); border-color: var(--neon-cyan); box-shadow: 0 0 20px var(--neon-cyan); }
+
+.details-card {
+  position: relative; max-width: 650px; margin: 0 auto; background: rgba(15, 20, 30, 0.85);
+  border: 1px solid var(--neon-orange); padding: 2.5rem; border-radius: 16px;
+  backdrop-filter: blur(25px); text-align: left; box-shadow: 0 0 30px rgba(255, 69, 0, 0.3);
+}
+.hidden { display: none; }
+.close-btn { position: absolute; right: 20px; top: 20px; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+
+.info-block { margin-top: 1.5rem; }
+.info-block h3 { color: var(--neon-cyan); margin-bottom: 0.5rem; }
+.info-block ul { margin-left: 1.5rem; color: #d0d5e5; }
+.btn-primary { background: var(--neon-orange); border: none; color: #fff; padding: 0.8rem 1.8rem; font-weight: 800; border-radius: 6px; cursor: pointer; }

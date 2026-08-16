@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ sport.title }} — SOCIAL 18</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="sport-page" style="background-image: linear-gradient(to bottom, rgba(10,11,16,0.75), rgba(10,11,16,0.95)), url('{{ sport.bg_image }}');">
+
+    <header class="navbar">
+        <div class="logo-group">
+            <a href="/" class="logo">SOCIAL <span class="highlight-red">18</span></a>
+            <span class="age-badge">AGES 14–18 ONLY</span>
+        </div>
+        <a href="/" class="btn-back">← Back to Arena</a>
+    </header>
+
+    <main class="sport-container">
+        <div class="apple-glass-panel anim-up">
+            <div class="panel-header">
+                <span class="category-pill">DISCIPLINE ARCHITECTURE</span>
+                <h1 class="sport-title-hero">{{ sport.title }}</h1>
+                <p class="tagline-sub">{{ sport.tagline }}</p>
+            </div>
+
+            <div class="panel-body">
+                <div class="info-card-bubble anim-up">
+                    <div class="bubble-icon">🧬</div>
+                    <h3>Health & Physiology</h3>
+                    <p>{{ sport.importance }}</p>
+                </div>
+
+                <div class="info-card-bubble anim-up">
+                    <div class="bubble-icon">⚡</div>
+                    <h3>Key Athletic Benefits</h3>
+                    <ul>
+                        {% for benefit in sport.benefits %}
+                            <li>{{ benefit }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="info-card-bubble anim-up">
+                    <div class="bubble-icon">🏟️</div>
+                    <h3>Infrastructure & Scheduling</h3>
+                    <p>{{ sport.arrangements }}</p>
+                </div>
+            </div>
+
+            <div class="panel-footer anim-up">
+                <a href="/" class="btn-primary-glow">Register for {{ sport.title }} Training</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from(".anim-up", {
+                y: 30,
+                opacity: 0,
+                duration: 0.7,
+                stagger: 0.1,
+                ease: "power2.out",
+                clearProps: "all"
+            });
+        });
+    </script>
+</body>
+</html>

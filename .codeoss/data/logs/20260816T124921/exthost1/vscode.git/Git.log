@@ -1,0 +1,73 @@
+2026-08-16 12:49:38.214 [info] [main] Log level: Info
+2026-08-16 12:49:38.214 [info] [main] Validating found git in: "git"
+2026-08-16 12:49:38.215 [info] [main] Using git "2.43.0" from "git"
+2026-08-16 12:49:38.215 [info] [Model][doInitialScan] Initial repository scan started
+2026-08-16 12:49:38.215 [info] > git rev-parse --show-toplevel [12ms]
+2026-08-16 12:49:38.221 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [22ms]
+2026-08-16 12:49:38.524 [info] [Model][openRepository] Opened repository (path): /home/rohithkalithkar
+2026-08-16 12:49:38.524 [info] [Model][openRepository] Opened repository (real path): /home/rohithkalithkar
+2026-08-16 12:49:38.524 [info] [Model][openRepository] Opened repository (kind): repository
+2026-08-16 12:49:38.627 [info] > git config --get commit.template [22ms]
+2026-08-16 12:49:38.633 [info] > git config --get --local core.virtualfilesystem [64ms]
+2026-08-16 12:49:38.633 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-16 12:49:38.645 [info] > git rev-parse --show-toplevel [33ms]
+2026-08-16 12:49:38.667 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 12:49:38.693 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [27ms]
+2026-08-16 12:49:38.694 [warning] [Git][getBranch] No such branch: master
+2026-08-16 12:49:38.740 [info] > git rev-parse --show-toplevel [53ms]
+2026-08-16 12:49:38.751 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [26ms]
+2026-08-16 12:49:38.760 [info] > git rev-parse --show-toplevel [9ms]
+2026-08-16 12:49:38.789 [info] > git rev-parse --show-toplevel [12ms]
+2026-08-16 12:49:38.839 [info] > git rev-parse --show-toplevel [9ms]
+2026-08-16 12:49:38.871 [info] > git rev-parse --show-toplevel [11ms]
+2026-08-16 12:49:38.894 [info] > git rev-parse --show-toplevel [9ms]
+2026-08-16 12:49:38.926 [info] > git rev-parse --show-toplevel [11ms]
+2026-08-16 12:49:38.959 [info] > git rev-parse --show-toplevel [3ms]
+2026-08-16 12:49:38.989 [info] > git rev-parse --show-toplevel [6ms]
+2026-08-16 12:49:38.990 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-08-16 12:49:39.178 [info] > git status -z -uall [468ms]
+2026-08-16 12:49:45.460 [info] > git check-ignore -v -z --stdin [5817ms]
+2026-08-16 12:49:45.461 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5862ms]
+2026-08-16 12:49:45.461 [warning] [Git][getBranch] No such branch: master
+2026-08-16 12:49:45.462 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2026-08-16 12:49:45.517 [info] > git config --get commit.template [4739ms]
+2026-08-16 12:49:45.534 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 12:49:45.538 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2026-08-16 12:49:45.538 [warning] [Git][getBranch] No such branch: master
+2026-08-16 12:49:45.563 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2026-08-16 12:49:45.644 [info] > git status -z -uall [100ms]
+2026-08-16 12:49:48.697 [info] > git check-ignore -v -z --stdin [1203ms]
+2026-08-16 12:49:51.471 [info] > git show --textconv :app.py [2023ms]
+2026-08-16 12:49:51.472 [info] > git show --textconv HEAD:app.py [1996ms]
+2026-08-16 12:49:54.421 [info] > git ls-tree -l HEAD -- app.py [4881ms]
+2026-08-16 12:49:54.421 [info] fatal: Not a valid object name HEAD
+2026-08-16 12:49:54.475 [info] > git ls-files --stage -- app.py [4968ms]
+2026-08-16 12:49:55.553 [info] > git hash-object -t tree /dev/null [807ms]
+2026-08-16 12:49:55.558 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/rohithkalithkar/app.py.git?%7B%22path%22%3A%22%2Fhome%2Frohithkalithkar%2Fapp.py%22%2C%22ref%22%3A%22HEAD%22%7D
+2026-08-16 12:49:55.574 [info] > git cat-file -s bf902c950ece56f6e865efa8ad78ab88f5a7bb6b [1052ms]
+2026-08-16 12:49:55.575 [info] > git hash-object -t tree /dev/null [1101ms]
+2026-08-16 12:49:55.575 [warning] [GitFileSystemProvider][stat] File not found - git:/home/rohithkalithkar/app.py.git?%7B%22path%22%3A%22%2Fhome%2Frohithkalithkar%2Fapp.py%22%2C%22ref%22%3A%22HEAD%22%7D
+2026-08-16 12:50:02.792 [info] > git config --get commit.template [7434ms]
+2026-08-16 12:50:02.971 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 12:50:03.022 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [52ms]
+2026-08-16 12:50:03.022 [warning] [Git][getBranch] No such branch: master
+2026-08-16 12:50:03.295 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [231ms]
+2026-08-16 12:50:03.405 [info] > git status -z -uall [368ms]
+2026-08-16 12:50:03.405 [info] > git check-ignore -v -z --stdin [38ms]
+2026-08-16 12:50:06.936 [info] > git check-ignore -v -z --stdin [53ms]
+2026-08-16 12:57:16.460 [info] > git config --get commit.template [14ms]
+2026-08-16 12:57:16.461 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2026-08-16 12:57:16.523 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-08-16 12:57:16.530 [info] > git ls-files --stage -- app.py [9ms]
+2026-08-16 12:57:16.548 [info] > git cat-file -s bf902c950ece56f6e865efa8ad78ab88f5a7bb6b [2ms]
+2026-08-16 12:57:16.562 [info] > git status -z -uall [91ms]
+2026-08-16 12:57:16.651 [info] > git show --textconv :app.py [13ms]
+2026-08-16 12:57:16.652 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [40ms]
+2026-08-16 12:57:16.708 [info] > git config --get --local branch.main.vscode-merge-base [36ms]
+2026-08-16 12:57:16.708 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-16 12:57:16.733 [info] > git reflog main --grep-reflog=branch: Created from *. [7ms]
+2026-08-16 12:57:16.747 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [3ms]
+2026-08-16 12:57:16.747 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2026-08-16 12:57:16.747 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2026-08-16 12:57:17.045 [info] > git blame --root --incremental 04282834d091319464cd2aba514ef269c5caa414 -- app.py [5ms]
+2026-08-16 12:57:17.412 [info] > git check-ignore -v -z --stdin [5ms]

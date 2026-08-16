@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOCIAL 18 | 3D Sports Arena</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Interactive 3D Canvas -->
+  <canvas id="canvas3d"></canvas>
+  <div id="bg-overlay" class="bg-overlay"></div>
+
+  <header class="navbar">
+    <div class="logo">SOCIAL<span>18</span></div>
+    <div class="badge">Ages 14–18 Only</div>
+    <button class="btn btn-primary">Join Squad</button>
+  </header>
+
+  <main class="content">
+    <div class="hero-title">
+      <h1>3D SPORTS ARENA</h1>
+      <p>Select a discipline to view health benefits & upcoming match arrangements.</p>
+    </div>
+
+    <!-- Interactive Sports Selector -->
+    <div class="sports-grid">
+      <div class="sport-card" onclick="loadSport('boxing')">🥊 Boxing</div>
+      <div class="sport-card" onclick="loadSport('running')">🏃 Running</div>
+      <div class="sport-card" onclick="loadSport('cycling')">🚴 Cycling</div>
+      <div class="sport-card" onclick="loadSport('cricket')">🏏 Cricket</div>
+      <div class="sport-card" onclick="loadSport('powerlifting')">🏋️ Powerlifting</div>
+    </div>
+
+    <!-- Dynamic Modal / Details Section -->
+    <div id="sport-details" class="details-card hidden">
+      <button class="close-btn" onclick="closeDetails()">✕</button>
+      <h2 id="sport-title">Sport</h2>
+      
+      <div class="info-block">
+        <h3>❤️ Importance for Health</h3>
+        <p id="sport-importance"></p>
+      </div>
+      
+      <div class="info-block">
+        <h3>⚡ Key Benefits</h3>
+        <ul id="sport-benefits"></ul>
+      </div>
+      
+      <div class="info-block">
+        <h3>🏆 How We Are Arranging</h3>
+        <p id="sport-arrangements"></p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Interactive 3D Particles Background (Three.js)
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas3d'), alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const geometry = new THREE.BufferGeometry();
+    const count = 1500;
+    const positions = new Float32Array(count * 3);
+    for (let i = 0; i < count * 3; i++) {
+      positions[i] = (Math.random() - 0.5) * 10;
+    }
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    const material = new THREE.PointsMaterial({ size: 0.02, color: 0x00f0ff });
+    const particles = new THREE.Points(geometry, material);
+    scene.add(particles);
+    camera.position.z = 3;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      particles.rotation.y += 0.002;
+      particles.rotation.x += 0.001;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Dynamic Fetch from Flask Backend
+    async function loadSport(sportName) {
+      const res = await fetch(`/api/sport/${sportName}`);
+      const data = await res.json();
+
+      document.getElementById('sport-title').innerText = data.title;
+      document.getElementById('sport-importance').innerText = data.importance;
+      document.getElementById('sport-arrangements').innerText = data.arrangements;
+
+      const benefitsList = document.getElementById('sport-benefits');
+      benefitsList.innerHTML = '';
+      data.benefits.forEach(b => {
+        const li = document.createElement('li');
+        li.innerText = b;
+        benefitsList.appendChild(li);
+      });
+
+      // 3D Visual Background Transition
+      const bgOverlay = document.getElementById('bg-overlay');
+      bgOverlay.style.backgroundImage = `linear-gradient(rgba(7,9,14,0.7), rgba(7,9,14,0.9)), url('${data.bg_image}')`;
+      bgOverlay.style.opacity = '1';
+
+      document.getElementById('sport-details').classList.remove('hidden');
+    }
+
+    function closeDetails() {
+      document.getElementById('sport-details').classList.add('hidden');
+      document.getElementById('bg-overlay').style.opacity = '0';
+    }
+  </script>
+</body>
+</html>

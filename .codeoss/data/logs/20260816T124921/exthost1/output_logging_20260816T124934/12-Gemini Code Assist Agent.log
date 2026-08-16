@@ -1,0 +1,518 @@
+Starting background process...
+Background process started with PID 2193
+[INFO] 2026-08-16 12:50:19.939 PM -- [CoderAgentExecutor] Overriding workspace path to: /home/rohithkalithkar
+[ERROR] 2026-08-16 12:50:19.965 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[ERROR] 2026-08-16 12:50:19.969 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[INFO] 2026-08-16 12:50:19.969 PM -- Loading extension: vertex (version: 0.2.0)
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ripgrep is not available. Falling back to GrepTool.
+Loading extension: vertex
+[MCP error] Error during discovery for MCP server 'VertexMcpServer': spawn ${extensionPath}/run.sh ENOENT Error: spawn ${extensionPath}/run.sh ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:287:19)
+    at onErrorNT (node:internal/child_process:508:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn ${extensionPath}/run.sh',
+  path: '${extensionPath}/run.sh',
+  spawnargs: []
+}
+Hook registry initialized with 0 hook entries
+Hook system initialized successfully
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+[MCP error] Error during discovery for MCP server 'visualization': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+[MCP error] Error during discovery for MCP server 'notebook': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh already in progress, queuing trailing execution.
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+Coalescing burst refresh requests (300ms delay)...
+Executing MCP context refresh...
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+[STARTUP] StartupProfiler.flush() called with 1 phases
+[STARTUP] Recording metric for phase: discover_tools duration: 15427.301424999998
+[INFO] 2026-08-16 12:50:39.144 PM -- [Config] Using CCPA Auth:
+[INFO] 2026-08-16 12:50:39.144 PM -- [Config] Attempting COMPUTE_ADC first.
+Failed to load credentials from /home/rohithkalithkar/.gemini/oauth_creds.json: ENOENT: no such file or directory, open '/home/rohithkalithkar/.gemini/oauth_creds.json'
+Attempting to authenticate via metadata server application default credentials.
+(node:2193) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Authentication successful.
+[INFO] 2026-08-16 12:50:39.704 PM -- [Config] COMPUTE_ADC failed or not available: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google
+[ERROR] 2026-08-16 12:50:39.705 PM -- [CoreAgent] Error during startup: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)
+{
+  "exitCode": 41,
+  "name": "FatalAuthenticationError",
+  "stack": "FatalAuthenticationError: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)\n    at refreshAuthentication (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426215:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async loadConfig (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426138:3)\n    at async createApp (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428675:21)\n    at async main (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428809:24)"
+}
+
+Process exited with code 1 and signal null
+Process exited unexpectedly, attempting to restart in 5 seconds...
+Starting background process...
+Background process started with PID 2307
+[INFO] 2026-08-16 12:50:46.118 PM -- [CoderAgentExecutor] Overriding workspace path to: /home/rohithkalithkar
+[ERROR] 2026-08-16 12:50:46.125 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[ERROR] 2026-08-16 12:50:46.126 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[INFO] 2026-08-16 12:50:46.127 PM -- Loading extension: vertex (version: 0.2.0)
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ripgrep is not available. Falling back to GrepTool.
+Loading extension: vertex
+[MCP error] Error during discovery for MCP server 'VertexMcpServer': spawn ${extensionPath}/run.sh ENOENT Error: spawn ${extensionPath}/run.sh ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:287:19)
+    at onErrorNT (node:internal/child_process:508:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn ${extensionPath}/run.sh',
+  path: '${extensionPath}/run.sh',
+  spawnargs: []
+}
+Hook registry initialized with 0 hook entries
+Hook system initialized successfully
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+[MCP error] Error during discovery for MCP server 'visualization': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+[MCP error] Error during discovery for MCP server 'notebook': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh already in progress, queuing trailing execution.
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+Coalescing burst refresh requests (300ms delay)...
+Executing MCP context refresh...
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+[STARTUP] StartupProfiler.flush() called with 1 phases
+[STARTUP] Recording metric for phase: discover_tools duration: 6483.625226
+[INFO] 2026-08-16 12:50:54.925 PM -- [Config] Using CCPA Auth:
+[INFO] 2026-08-16 12:50:54.925 PM -- [Config] Attempting COMPUTE_ADC first.
+Failed to load credentials from /home/rohithkalithkar/.gemini/oauth_creds.json: ENOENT: no such file or directory, open '/home/rohithkalithkar/.gemini/oauth_creds.json'
+Attempting to authenticate via metadata server application default credentials.
+Authentication successful.
+[INFO] 2026-08-16 12:50:55.379 PM -- [Config] COMPUTE_ADC failed or not available: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google
+[ERROR] 2026-08-16 12:50:55.380 PM -- [CoreAgent] Error during startup: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)
+{
+  "exitCode": 41,
+  "name": "FatalAuthenticationError",
+  "stack": "FatalAuthenticationError: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)\n    at refreshAuthentication (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426215:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async loadConfig (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426138:3)\n    at async createApp (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428675:21)\n    at async main (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428809:24)"
+}
+(node:2307) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Process exited with code 1 and signal null
+Process exited unexpectedly, attempting to restart in 10 seconds...
+Starting background process...
+Background process started with PID 2351
+[INFO] 2026-08-16 12:51:08.221 PM -- [CoderAgentExecutor] Overriding workspace path to: /home/rohithkalithkar
+[ERROR] 2026-08-16 12:51:08.230 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[ERROR] 2026-08-16 12:51:08.231 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[INFO] 2026-08-16 12:51:08.235 PM -- Loading extension: vertex (version: 0.2.0)
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ripgrep is not available. Falling back to GrepTool.
+Loading extension: vertex
+[MCP error] Error during discovery for MCP server 'VertexMcpServer': spawn ${extensionPath}/run.sh ENOENT Error: spawn ${extensionPath}/run.sh ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:287:19)
+    at onErrorNT (node:internal/child_process:508:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn ${extensionPath}/run.sh',
+  path: '${extensionPath}/run.sh',
+  spawnargs: []
+}
+Hook registry initialized with 0 hook entries
+Hook system initialized successfully
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+[MCP error] Error during discovery for MCP server 'visualization': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:350:12) {
+  code: -32000,
+  data: undefined
+}
+[MCP error] Error during discovery for MCP server 'notebook': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh already in progress, queuing trailing execution.
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+Coalescing burst refresh requests (300ms delay)...
+Executing MCP context refresh...
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+[STARTUP] StartupProfiler.flush() called with 1 phases
+[STARTUP] Recording metric for phase: discover_tools duration: 5526.869000000001
+[INFO] 2026-08-16 12:51:16.595 PM -- [Config] Using CCPA Auth:
+[INFO] 2026-08-16 12:51:16.595 PM -- [Config] Attempting COMPUTE_ADC first.
+Failed to load credentials from /home/rohithkalithkar/.gemini/oauth_creds.json: ENOENT: no such file or directory, open '/home/rohithkalithkar/.gemini/oauth_creds.json'
+Attempting to authenticate via metadata server application default credentials.
+(node:2351) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Authentication successful.
+[INFO] 2026-08-16 12:51:17.251 PM -- [Config] COMPUTE_ADC failed or not available: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google
+[ERROR] 2026-08-16 12:51:17.252 PM -- [CoreAgent] Error during startup: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)
+{
+  "exitCode": 41,
+  "name": "FatalAuthenticationError",
+  "stack": "FatalAuthenticationError: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)\n    at refreshAuthentication (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426215:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async loadConfig (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426138:3)\n    at async createApp (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428675:21)\n    at async main (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428809:24)"
+}
+
+Process exited with code 1 and signal null
+Process exited unexpectedly, attempting to restart in 20 seconds...
+Starting background process...
+Background process started with PID 2427
+[INFO] 2026-08-16 12:51:38.611 PM -- [CoderAgentExecutor] Overriding workspace path to: /home/rohithkalithkar
+[ERROR] 2026-08-16 12:51:38.618 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[ERROR] 2026-08-16 12:51:38.620 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[INFO] 2026-08-16 12:51:38.620 PM -- Loading extension: vertex (version: 0.2.0)
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ripgrep is not available. Falling back to GrepTool.
+Loading extension: vertex
+[MCP error] Error during discovery for MCP server 'VertexMcpServer': spawn ${extensionPath}/run.sh ENOENT Error: spawn ${extensionPath}/run.sh ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:287:19)
+    at onErrorNT (node:internal/child_process:508:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn ${extensionPath}/run.sh',
+  path: '${extensionPath}/run.sh',
+  spawnargs: []
+}
+Hook registry initialized with 0 hook entries
+Hook system initialized successfully
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+[MCP error] Error during discovery for MCP server 'visualization': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+[MCP error] Error during discovery for MCP server 'notebook': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh already in progress, queuing trailing execution.
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+Coalescing burst refresh requests (300ms delay)...
+Executing MCP context refresh...
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+[STARTUP] StartupProfiler.flush() called with 1 phases
+[STARTUP] Recording metric for phase: discover_tools duration: 3986.8562079999997
+[INFO] 2026-08-16 12:51:44.561 PM -- [Config] Using CCPA Auth:
+[INFO] 2026-08-16 12:51:44.562 PM -- [Config] Attempting COMPUTE_ADC first.
+Failed to load credentials from /home/rohithkalithkar/.gemini/oauth_creds.json: ENOENT: no such file or directory, open '/home/rohithkalithkar/.gemini/oauth_creds.json'
+Attempting to authenticate via metadata server application default credentials.
+(node:2427) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Authentication successful.
+[INFO] 2026-08-16 12:51:45.051 PM -- [Config] COMPUTE_ADC failed or not available: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google
+[ERROR] 2026-08-16 12:51:45.052 PM -- [CoreAgent] Error during startup: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)
+{
+  "exitCode": 41,
+  "name": "FatalAuthenticationError",
+  "stack": "FatalAuthenticationError: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)\n    at refreshAuthentication (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426215:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async loadConfig (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426138:3)\n    at async createApp (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428675:21)\n    at async main (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428809:24)"
+}
+
+Process exited with code 1 and signal null
+Process exited unexpectedly, attempting to restart in 40 seconds...
+Starting background process...
+Background process started with PID 2470
+[INFO] 2026-08-16 12:52:26.455 PM -- [CoderAgentExecutor] Overriding workspace path to: /home/rohithkalithkar
+[ERROR] 2026-08-16 12:52:26.461 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[ERROR] 2026-08-16 12:52:26.462 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[INFO] 2026-08-16 12:52:26.464 PM -- Loading extension: vertex (version: 0.2.0)
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ripgrep is not available. Falling back to GrepTool.
+Loading extension: vertex
+[MCP error] Error during discovery for MCP server 'VertexMcpServer': spawn ${extensionPath}/run.sh ENOENT Error: spawn ${extensionPath}/run.sh ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:287:19)
+    at onErrorNT (node:internal/child_process:508:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn ${extensionPath}/run.sh',
+  path: '${extensionPath}/run.sh',
+  spawnargs: []
+}
+Hook registry initialized with 0 hook entries
+Hook system initialized successfully
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+[MCP error] Error during discovery for MCP server 'notebook': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+[MCP error] Error during discovery for MCP server 'visualization': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh already in progress, queuing trailing execution.
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+Coalescing burst refresh requests (300ms delay)...
+Executing MCP context refresh...
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+[STARTUP] StartupProfiler.flush() called with 1 phases
+[STARTUP] Recording metric for phase: discover_tools duration: 3994.20981
+[INFO] 2026-08-16 12:52:32.168 PM -- [Config] Using CCPA Auth:
+[INFO] 2026-08-16 12:52:32.169 PM -- [Config] Attempting COMPUTE_ADC first.
+Failed to load credentials from /home/rohithkalithkar/.gemini/oauth_creds.json: ENOENT: no such file or directory, open '/home/rohithkalithkar/.gemini/oauth_creds.json'
+Attempting to authenticate via metadata server application default credentials.
+(node:2470) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Authentication successful.
+[INFO] 2026-08-16 12:52:32.881 PM -- [Config] COMPUTE_ADC failed or not available: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google
+[ERROR] 2026-08-16 12:52:32.882 PM -- [CoreAgent] Error during startup: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)
+{
+  "exitCode": 41,
+  "name": "FatalAuthenticationError",
+  "stack": "FatalAuthenticationError: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)\n    at refreshAuthentication (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426215:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async loadConfig (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426138:3)\n    at async createApp (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428675:21)\n    at async main (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428809:24)"
+}
+
+Process exited with code 1 and signal null
+Process exited unexpectedly, attempting to restart in 80 seconds...
+Starting background process...
+Background process started with PID 2536
+[INFO] 2026-08-16 12:53:54.326 PM -- [CoderAgentExecutor] Overriding workspace path to: /home/rohithkalithkar
+[ERROR] 2026-08-16 12:53:54.333 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[ERROR] 2026-08-16 12:53:54.335 PM -- Warning: unexpected file /home/rohithkalithkar/.gemini/extensions/extension-enablement.json in extensions directory.
+[INFO] 2026-08-16 12:53:54.335 PM -- Loading extension: vertex (version: 0.2.0)
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ignore file not found: /home/rohithkalithkar/.geminiignore, continue without it.
+Ignore file not found: /home/rohithkalithkar/.aiexclude, continue without it.
+Ripgrep is not available. Falling back to GrepTool.
+Loading extension: vertex
+[MCP error] Error during discovery for MCP server 'VertexMcpServer': spawn ${extensionPath}/run.sh ENOENT Error: spawn ${extensionPath}/run.sh ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:287:19)
+    at onErrorNT (node:internal/child_process:508:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn ${extensionPath}/run.sh',
+  path: '${extensionPath}/run.sh',
+  spawnargs: []
+}
+Hook registry initialized with 0 hook entries
+Hook system initialized successfully
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+[MCP error] Error during discovery for MCP server 'notebook': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+[MCP error] Error during discovery for MCP server 'visualization': MCP error -32000: Connection closed _McpError: MCP error -32000: Connection closed
+    at _McpError.fromError (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297181:16)
+    at Client._onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297350:33)
+    at _transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:297320:16)
+    at McpComplianceTransport.transport.onclose (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:395368:25)
+    at ChildProcess.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:300072:76)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: -32000,
+  data: undefined
+}
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh already in progress, queuing trailing execution.
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+Coalescing burst refresh requests (300ms delay)...
+Executing MCP context refresh...
+[DEBUG] [MemoryDiscovery] Loading environment memory for trusted root: /home/rohithkalithkar (Stopping at git root: /home/rohithkalithkar)
+[DEBUG] [MemoryDiscovery] Starting upward search from /home/rohithkalithkar stopping at /home/rohithkalithkar
+[DEBUG] [MemoryDiscovery] deduplication: keeping /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (dev: 2065, ino: 131124)
+[DEBUG] [MemoryDiscovery] Successfully read and processed imports: /home/rohithkalithkar/.gemini/extensions/vertex/GEMINI.md (Length: 55458)
+MCP context refresh complete.
+[STARTUP] StartupProfiler.flush() called with 1 phases
+[STARTUP] Recording metric for phase: discover_tools duration: 4158.234777
+[INFO] 2026-08-16 12:54:00.344 PM -- [Config] Using CCPA Auth:
+[INFO] 2026-08-16 12:54:00.345 PM -- [Config] Attempting COMPUTE_ADC first.
+Failed to load credentials from /home/rohithkalithkar/.gemini/oauth_creds.json: ENOENT: no such file or directory, open '/home/rohithkalithkar/.gemini/oauth_creds.json'
+Attempting to authenticate via metadata server application default credentials.
+(node:2536) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Authentication successful.
+[INFO] 2026-08-16 12:54:00.774 PM -- [Config] COMPUTE_ADC failed or not available: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google
+[ERROR] 2026-08-16 12:54:00.775 PM -- [CoreAgent] Error during startup: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)
+{
+  "exitCode": 41,
+  "name": "FatalAuthenticationError",
+  "stack": "FatalAuthenticationError: COMPUTE_ADC failed: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google. (LOGIN_WITH_GOOGLE fallback skipped due to headless mode. Run in an interactive terminal to use OAuth.)\n    at refreshAuthentication (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426215:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async loadConfig (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:426138:3)\n    at async createApp (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428675:21)\n    at async main (file:///google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/agent/a2a-server.mjs:428809:24)"
+}
+
+Process exited with code 1 and signal null
+Agent process failed to restart after 5 consecutive crashes

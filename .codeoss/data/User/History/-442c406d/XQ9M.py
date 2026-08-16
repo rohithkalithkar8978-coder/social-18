@@ -1,0 +1,56 @@
+from flask import Flask, jsonify, render_template
+
+app = Flask(__name__)
+
+# Sports Database with 3D Rendered Visual References
+SPORTS_DATA = {
+    "boxing": {
+        "title": "Boxing",
+        "bg_image": "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1600&q=80",
+        "importance": "Crucial for explosive cardiovascular endurance, reflexes, and mental resilience.",
+        "benefits": ["Enhanced hand-eye coordination", "Core stability & power", "Agility and defensive reflexes"],
+        "arrangements": "Weekly sparring sessions at central arenas, certified coaching, and weight-class brackets."
+    },
+    "running": {
+        "title": "Running",
+        "bg_image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=80",
+        "importance": "Increases lung capacity, strengthens bone density, and lowers resting heart rate.",
+        "benefits": ["Stamina improvement", "Dopamine & mental clarity", "Leg strength and joint vitality"],
+        "arrangements": "Bi-weekly 5K sprint trials and 10K endurance runs timed with digital RFID chips."
+    },
+    "cycling": {
+        "title": "Cycling",
+        "bg_image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1600&q=80",
+        "importance": "Low-impact endurance training that maximizes leg power without damaging joints.",
+        "benefits": ["Quadriceps and calf power", "Spatial awareness & speed", "Vascular health"],
+        "arrangements": "Weekend velodrome races, highway sprint circuits, and safety-escorted group rides."
+    },
+    "cricket": {
+        "title": "Cricket",
+        "bg_image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1600&q=80",
+        "importance": "Fosters high-pressure teamwork, tactical thinking, dynamic movement, and upper-body power.",
+        "benefits": ["Strategic intelligence", "Sprinting & throwing power", "Team collaboration under pressure"],
+        "arrangements": "T20 dynamic leagues, net practice sessions, and professional turf pitch matches."
+    },
+    "powerlifting": {
+        "title": "Powerlifting",
+        "bg_image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80",
+        "importance": "Builds skeletal mass, foundational raw power, and proper kinetic chain biomechanics.",
+        "benefits": ["Maximum strength output", "Bone density enhancement", "Posterior chain activation"],
+        "arrangements": "Supervised Squat/Bench/Deadlift max tests with certified strength coaches and safety spotters."
+    }
+}
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/api/sport/<name>')
+def get_sport_info(name):
+    sport = SPORTS_DATA.get(name.lower())
+    if sport:
+        return jsonify(sport)
+    return jsonify({"error": "Sport not found"}), 404
+
+if __name__ == '__main__':
+    app.run(debug=True, port=8080)

@@ -1,0 +1,65 @@
+2026-08-16 10:40:17.893 [info] [main] Log level: Info
+2026-08-16 10:40:17.893 [info] [main] Validating found git in: "git"
+2026-08-16 10:40:17.893 [info] [main] Using git "2.43.0" from "git"
+2026-08-16 10:40:17.893 [info] [Model][doInitialScan] Initial repository scan started
+2026-08-16 10:40:17.893 [info] > git rev-parse --show-toplevel [3ms]
+2026-08-16 10:40:17.893 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [5ms]
+2026-08-16 10:40:17.943 [info] [Model][openRepository] Opened repository (path): /home/rohithkalithkar
+2026-08-16 10:40:17.943 [info] [Model][openRepository] Opened repository (real path): /home/rohithkalithkar
+2026-08-16 10:40:17.943 [info] [Model][openRepository] Opened repository (kind): repository
+2026-08-16 10:40:17.960 [info] > git config --get commit.template [5ms]
+2026-08-16 10:40:17.961 [info] > git config --get --local core.virtualfilesystem [12ms]
+2026-08-16 10:40:17.961 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-16 10:40:17.963 [info] > git rev-parse --show-toplevel [4ms]
+2026-08-16 10:40:17.969 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 10:40:17.973 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2026-08-16 10:40:17.974 [warning] [Git][getBranch] No such branch: master
+2026-08-16 10:40:17.984 [info] > git rev-parse --show-toplevel [12ms]
+2026-08-16 10:40:17.988 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2026-08-16 10:40:17.990 [info] > git rev-parse --show-toplevel [3ms]
+2026-08-16 10:40:17.995 [info] > git rev-parse --show-toplevel [2ms]
+2026-08-16 10:40:18.000 [info] > git rev-parse --show-toplevel [1ms]
+2026-08-16 10:40:18.005 [info] > git rev-parse --show-toplevel [1ms]
+2026-08-16 10:40:18.023 [info] > git rev-parse --show-toplevel [5ms]
+2026-08-16 10:40:18.036 [info] > git rev-parse --show-toplevel [8ms]
+2026-08-16 10:40:18.043 [info] > git rev-parse --show-toplevel [3ms]
+2026-08-16 10:40:18.048 [info] > git rev-parse --show-toplevel [2ms]
+2026-08-16 10:40:18.049 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-08-16 10:40:21.221 [info] > git status -z -uall [3243ms]
+2026-08-16 10:40:21.222 [info] > git check-ignore -v -z --stdin [40ms]
+2026-08-16 10:40:22.890 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1507ms]
+2026-08-16 10:40:22.890 [warning] [Git][getBranch] No such branch: master
+2026-08-16 10:40:22.891 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2026-08-16 10:40:23.188 [info] > git config --get commit.template [842ms]
+2026-08-16 10:40:23.208 [info] > git check-ignore -v -z --stdin [286ms]
+2026-08-16 10:40:23.234 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 10:40:26.997 [info] > git show --textconv :app.py [528ms]
+2026-08-16 10:40:26.997 [info] > git show --textconv HEAD:app.py [511ms]
+2026-08-16 10:40:27.060 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3829ms]
+2026-08-16 10:40:27.060 [warning] [Git][getBranch] No such branch: master
+2026-08-16 10:40:29.460 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2344ms]
+2026-08-16 10:40:29.469 [info] > git ls-tree -l HEAD -- app.py [2933ms]
+2026-08-16 10:40:29.469 [info] fatal: Not a valid object name HEAD
+2026-08-16 10:40:29.500 [info] > git ls-files --stage -- app.py [2987ms]
+2026-08-16 10:40:29.712 [info] > git hash-object -t tree /dev/null [144ms]
+2026-08-16 10:40:29.712 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/rohithkalithkar/app.py.git?%7B%22path%22%3A%22%2Fhome%2Frohithkalithkar%2Fapp.py%22%2C%22ref%22%3A%22HEAD%22%7D
+2026-08-16 10:40:29.723 [info] > git cat-file -s bf902c950ece56f6e865efa8ad78ab88f5a7bb6b [184ms]
+2026-08-16 10:40:29.724 [info] > git hash-object -t tree /dev/null [225ms]
+2026-08-16 10:40:29.724 [warning] [GitFileSystemProvider][stat] File not found - git:/home/rohithkalithkar/app.py.git?%7B%22path%22%3A%22%2Fhome%2Frohithkalithkar%2Fapp.py%22%2C%22ref%22%3A%22HEAD%22%7D
+2026-08-16 10:40:34.217 [info] > git status -z -uall [7137ms]
+2026-08-16 10:40:35.401 [info] > git check-ignore -v -z --stdin [120ms]
+2026-08-16 10:40:36.455 [info] > git check-ignore -v -z --stdin [15ms]
+2026-08-16 10:41:31.815 [info] > git config --get commit.template [19ms]
+2026-08-16 10:41:31.860 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 10:41:31.868 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2026-08-16 10:41:31.869 [warning] [Git][getBranch] No such branch: master
+2026-08-16 10:41:31.970 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [11ms]
+2026-08-16 10:41:32.171 [info] > git status -z -uall [273ms]
+2026-08-16 10:41:40.486 [info] > git check-ignore -v -z --stdin [9ms]
+2026-08-16 10:41:50.165 [info] [Git][getRemotes] No remotes found in the git config file
+2026-08-16 10:41:50.167 [info] > git config --get commit.template [16ms]
+2026-08-16 10:41:50.168 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2026-08-16 10:41:50.168 [warning] [Git][getBranch] No such branch: master
+2026-08-16 10:41:50.212 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-08-16 10:41:50.274 [info] > git status -z -uall [97ms]
+2026-08-16 10:41:54.117 [info] > git check-ignore -v -z --stdin [18ms]

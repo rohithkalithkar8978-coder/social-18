@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ sport.title }} — SOCIAL 18</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <span class="logo-main">SOCIAL</span>
+                <span class="logo-badge">18</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="/">← Back to Home</a>
+        </div>
+    </nav>
+
+    <main class="content" style="padding-top: 100px; text-align: center;">
+        <h1 class="hero-title">{{ sport.title }}</h1>
+        <p class="hero-subtitle">{{ sport.tagline }}</p>
+        <div style="max-width: 600px; margin: 40px auto; line-height: 1.6;">
+            <p>{{ sport.description }}</p>
+        </div>
+        <a href="/" class="hero-cta" style="text-decoration: none; display: inline-block;">Return Home</a>
+    </main>
+</body>
+</html>

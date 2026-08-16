@@ -1,0 +1,16 @@
+2026-08-16 12:49:40.501 [warning] Dir "/home/rohithkalithkar/.pixi/envs" is not watchable (directory does not exist)
+2026-08-16 12:49:43.122 [error] extension activation failed [Canceled (FileSystemError): Canceled
+	at sn.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:18913)
+	at Object.copy (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:17404)
+	at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+	at async p (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:922863)
+	at async t.registerPythonStartup (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:923463)
+	at async /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:481481
+	at async t.activateComponents (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:480242)
+	at async /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2731076
+	at async e (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2730532)
+	at async OS.n (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:13433)
+	at async OS.m (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:13396)
+	at async OS.l (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:12852)] {
+  code: 'Unknown'
+}

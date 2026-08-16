@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL 18 — Next-Gen Athletics</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">SOCIAL <span class="highlight-red">18</span></div>
+        <nav class="nav-links">
+            <a href="#sports">Sports Arena</a>
+            <a href="#community" class="btn-glow">Join Now</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="hero-section">
+            <h1 class="hero-title">NEXT-GEN <span>ATHLETICS</span></h1>
+            <p class="hero-subtitle">Select a sport to explore dedicated training grounds.</p>
+        </section>
+
+        <section class="sports-section" id="sports">
+            <h2>Select Your Sport</h2>
+            <div class="sports-grid">
+                {% for key, sport in sports.items() %}
+                    <a href="/sport/{{ key }}" class="sport-card-link">
+                        <div class="sport-btn">{{ sport.title }}</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

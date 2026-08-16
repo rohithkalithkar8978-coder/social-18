@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ sport.title }} — SOCIAL 18</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="sport-page" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('{{ sport.bg_image }}');">
+
+    <header class="navbar">
+        <a href="/" class="logo">SOCIAL <span class="highlight-red">18</span></a>
+        <a href="/" class="btn-back">← Back to Sports Arena</a>
+    </header>
+
+    <main class="sport-hero">
+        <div class="sport-card-full">
+            <h1 class="sport-title-large">{{ sport.title }}</h1>
+            
+            <section class="info-block">
+                <h3>Importance</h3>
+                <p>{{ sport.importance }}</p>
+            </section>
+
+            <section class="info-block">
+                <h3>Key Benefits</h3>
+                <ul>
+                    {% for benefit in sport.benefits %}
+                        <li>{{ benefit }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+            <section class="info-block">
+                <h3>Arrangements & Training</h3>
+                <p>{{ sport.arrangements }}</p>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL 18 — Next-Gen Athletics</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-group">
+            <span class="logo">SOCIAL <span class="highlight-red">18</span></span>
+            <span class="age-badge">AGES 14–18 ONLY</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#sports">Disciplines</a>
+            <a href="#community" class="btn-glow">Join Squad</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="hero-section">
+            <div class="age-pill">EXCLUSIVELY FOR AGES 14–18</div>
+            <h1 class="hero-title">PUSH YOUR <span class="gradient-text">LIMITS</span></h1>
+            <p class="hero-subtitle">The ultimate arena for young athletes. Select a discipline to enter training grounds.</p>
+        </section>
+
+        <section class="sports-section" id="sports">
+            <h2 class="section-heading">FEATURED DISCIPLINES</h2>
+            
+            <div class="apple-grid">
+                {% for key, sport in sports.items() %}
+                    <a href="/sport/{{ key }}" class="apple-card">
+                        <span class="card-number">0{{ loop.index }}</span>
+                        <h3 class="card-title">{{ sport.title }}</h3>
+                        <p class="card-tagline">{{ sport.tagline }}</p>
+                        <div class="card-arrow">→</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <script>
+        gsap.from(".hero-section *", {
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".apple-card", {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.08,
+            ease: "back.out(1.2)",
+            delay: 0.3
+        });
+    </script>
+</body>
+</html>

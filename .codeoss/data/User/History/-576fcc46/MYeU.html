@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL 18 — Free Event Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-main">SOCIAL</span>
+            <span class="logo-badge">18</span>
+            <span class="logo-sub">AGES 14–18 ONLY</span>
+        </div>
+        <div class="nav-links">
+            <a href="#sports">Disciplines</a>
+            <button class="nav-btn" onclick="openModal()">Register Now</button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-badge">FREE ATHLETIC MEETUP — AGES 14–18 ONLY</div>
+        <h1 class="hero-title">PUSH YOUR<br><span class="gradient-text">LIMITS</span></h1>
+        <p class="hero-subtitle">Join our free youth sports arena. Select a discipline below or register right away.</p>
+        <button class="hero-cta" onclick="openModal()">Enroll for Free</button>
+    </header>
+
+    <main class="content">
+        <section class="sports-section" id="sports">
+            <h2 class="section-heading">FEATURED DISCIPLINES</h2>
+            <div class="apple-grid">
+                {% for key, sport in sports.items() %}
+                    <a href="/sport/{{ key }}" class="apple-card">
+                        <span class="card-number">0{{ loop.index }}</span>
+                        <h3 class="card-title">{{ sport|title }}</h3>
+                        <p class="card-tagline">{{ sport.tagline if sport is mapping else '' }}</p>
+                        <div class="card-arrow">→</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Founder: Sankeerthan Kotapati &nbsp;|&nbsp; Co-Founder: Rohit Kalithkar</p>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="regModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h2>FREE EVENT REGISTRATION</h2>
+            <p>Fill in your details to reserve your spot.</p>
+            <form action="/register" method="POST" class="reg-form">
+                <input type="text" name="name" placeholder="Full Name *" required>
+                <input type="email" name="email" placeholder="Email Address *" required>
+                <input type="number" name="age" min="14" max="18" placeholder="Age (14-18) *" required>
+                <input type="tel" name="phone" placeholder="Phone / WhatsApp *" required>
+                <select name="sport" required>
+                    <option value="" disabled selected>Select Sport Discipline *</option>
+                    {% for key, sport in sports.items() %}
+                        <option value="{{ key }}">{{ sport|title }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="submit-btn">Confirm Free Enrollment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('regModal').classList.add('active');
+        }
+        function closeModal() {
+            document.getElementById('regModal').classList.remove('active');
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from(".hero-section *", { y: 20, opacity: 0, duration: 0.5, stagger: 0.06, ease: "power2.out", clearProps: "all" });
+            gsap.from(".apple-card", { y: 30, opacity: 0, duration: 0.5, stagger: 0.05, ease: "power2.out", clearProps: "all" });
+        });
+    </script>
+</body>
+</html>

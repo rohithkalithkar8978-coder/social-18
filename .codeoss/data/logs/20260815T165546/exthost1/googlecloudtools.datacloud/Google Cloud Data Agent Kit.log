@@ -1,0 +1,154 @@
+2026-08-15 16:56:36.900 [info] [OnboardingStatus] Updating context key 'gDataCloud.alreadyOnboarded' to false
+2026-08-15 16:56:36.900 [info] Getting gcloud config internal...
+2026-08-15 16:56:36.900 [info] Checking for gcloud binary path...
+2026-08-15 16:56:36.900 [info] Executing: which gcloud
+2026-08-15 16:56:36.900 [info] Getting gcloud config internal...
+2026-08-15 16:56:36.901 [info] Checking for gcloud binary path...
+2026-08-15 16:56:36.901 [info] Executing: which gcloud
+2026-08-15 16:56:36.901 [info] Checking for gcloud binary path...
+2026-08-15 16:56:36.901 [info] Executing: which gcloud
+2026-08-15 16:56:36.901 [info] hasGcloud: true
+2026-08-15 16:56:36.901 [info] Syncing gcloud settings to extension
+2026-08-15 16:56:36.901 [info] hasGcloud: true
+2026-08-15 16:56:36.901 [info] Getting gcloud config internal...
+2026-08-15 16:56:36.901 [info] [OnboardingPlugin] Cloud Code extension or Cloud Shell/Workstations detected. Skipping automatic onboarding.
+2026-08-15 16:56:36.901 [info] Executing: gcloud config config-helper --format json
+2026-08-15 16:56:36.901 [info] Activating bigquery
+2026-08-15 16:56:36.901 [info] ConversationalAnalyticsPlugin activated
+2026-08-15 16:56:36.901 [info] ConversationalAnalyticsPlugin: activate finished
+2026-08-15 16:56:36.901 [info] Activating Databases
+2026-08-15 16:56:36.901 [info] Activating Catalog Feature
+2026-08-15 16:56:36.901 [info] Activating dataplex universal catalog
+2026-08-15 16:56:36.901 [info] Activating dataproc
+2026-08-15 16:56:36.901 [info] Activating spark resource tree
+2026-08-15 16:56:36.901 [info] SparkMonitorPlugin: Activating...
+2026-08-15 16:56:36.901 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:27.990Z] Activating Agent Skill Installer
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] appName: Code OSS for Cloud Shell, ideType: 6
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] Profile antigravity-ide is NOT active
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] Profile antigravity is NOT active
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] Profile jetski is NOT active
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] Profile cursor is NOT active
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] Profile copilot is NOT active
+2026-08-15 16:56:36.901 [info] [2026-08-15T16:56:28.006Z] Profile gemini-code-assist is active
+2026-08-15 16:56:36.901 [info] Executing: gcloud config config-helper --format json
+2026-08-15 16:56:36.901 [info] Executing: gcloud config config-helper --format json
+2026-08-15 16:56:36.901 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 16:56:36.901 [info] [MCP Registry] Listening on socket: /tmp/datacloud-mcp-notebooks-codeossforcloudshell.sock
+2026-08-15 16:56:36.901 [info] [MCP Registry] Server 'notebooks' listening on IPC socket: /tmp/datacloud-mcp-notebooks-codeossforcloudshell.sock
+2026-08-15 16:56:36.901 [info] [MCP Registry] Listening on socket: /tmp/datacloud-mcp-visualization-codeossforcloudshell.sock
+2026-08-15 16:56:36.901 [info] [MCP Registry] Server 'visualization' listening on IPC socket: /tmp/datacloud-mcp-visualization-codeossforcloudshell.sock
+2026-08-15 16:56:36.901 [info] [MCP Registry] Listening on socket: /tmp/datacloud-mcp-context-codeossforcloudshell.sock
+2026-08-15 16:56:36.901 [info] [MCP Registry] Server 'context' listening on IPC socket: /tmp/datacloud-mcp-context-codeossforcloudshell.sock
+2026-08-15 16:56:36.901 [info] Installed static notebooks and visualization MCP servers configuration in /home/rohithkalithkar/.gemini/settings.json
+2026-08-15 16:56:36.901 [info] MCP config plugin: ideType: 6
+2026-08-15 16:56:37.194 [info] Checking if identities match...Fetching ADC account name...
+2026-08-15 16:56:37.425 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 16:56:38.036 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-08-15 16:56:38.093 [info] hasGcloud: true
+2026-08-15 16:56:38.790 [info] [2026-08-15T16:56:38.789Z] Checking skills for Gemini Code Assist in /home/rohithkalithkar/.gemini/skills. Force=false
+2026-08-15 16:56:38.794 [info] [2026-08-15T16:56:38.794Z] No previous manifest found or it was invalid.
+2026-08-15 16:56:38.804 [info] [2026-08-15T16:56:38.804Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills
+2026-08-15 16:56:38.820 [info] [2026-08-15T16:56:38.820Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/accidental-data-loss-prevention
+2026-08-15 16:56:38.821 [info] [2026-08-15T16:56:38.821Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-ai-ml
+2026-08-15 16:56:38.822 [info] [2026-08-15T16:56:38.822Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-bigframes
+2026-08-15 16:56:38.822 [info] [2026-08-15T16:56:38.822Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-data-transfer-service
+2026-08-15 16:56:38.822 [info] [2026-08-15T16:56:38.822Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-graph
+2026-08-15 16:56:38.823 [info] [2026-08-15T16:56:38.823Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/bigquery-sql
+2026-08-15 16:56:38.823 [info] [2026-08-15T16:56:38.823Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/building-data-apps
+2026-08-15 16:56:38.824 [info] [2026-08-15T16:56:38.824Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/data-autocleaning
+2026-08-15 16:56:38.824 [info] [2026-08-15T16:56:38.824Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/dataform-bigquery
+2026-08-15 16:56:38.824 [info] [2026-08-15T16:56:38.824Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/dbt-bigquery
+2026-08-15 16:56:38.825 [info] [2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/discovering-gcp-data-assets
+2026-08-15 16:56:38.825 [info] [2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/enforcing-resource-attribution
+2026-08-15 16:56:38.825 [info] [2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/federate-lakehouse-catalog
+2026-08-15 16:56:38.825 [info] [2026-08-15T16:56:38.825Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcloud-auth-verification
+2026-08-15 16:56:38.826 [info] [2026-08-15T16:56:38.826Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-composer-troubleshooting
+2026-08-15 16:56:38.826 [info] [2026-08-15T16:56:38.826Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-data-pipelines
+2026-08-15 16:56:38.826 [info] [2026-08-15T16:56:38.826Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-dataflow
+2026-08-15 16:56:38.827 [info] [2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-managed-airflow-migrations
+2026-08-15 16:56:38.827 [info] [2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-pipeline-orchestration
+2026-08-15 16:56:38.827 [info] [2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-pipeline-resource-provisioning
+2026-08-15 16:56:38.827 [info] [2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcp-spark
+2026-08-15 16:56:38.827 [info] [2026-08-15T16:56:38.827Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/gcs-security-assessment
+2026-08-15 16:56:38.828 [info] [2026-08-15T16:56:38.828Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/managing-python-dependencies
+2026-08-15 16:56:38.828 [info] [2026-08-15T16:56:38.828Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/ml-best-practices
+2026-08-15 16:56:38.828 [info] [2026-08-15T16:56:38.828Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/notebook-guidance
+2026-08-15 16:56:38.830 [info] [2026-08-15T16:56:38.830Z] Ensured destination directory exists: /home/rohithkalithkar/.gemini/skills/skill-repair
+2026-08-15 16:56:38.898 [info] [2026-08-15T16:56:38.893Z] Copied skill skill-repair to /home/rohithkalithkar/.gemini/skills/skill-repair
+2026-08-15 16:56:38.908 [info] [2026-08-15T16:56:38.908Z] Copied skill dbt-bigquery to /home/rohithkalithkar/.gemini/skills/dbt-bigquery
+2026-08-15 16:56:38.911 [info] [2026-08-15T16:56:38.911Z] Copied skill federate-lakehouse-catalog to /home/rohithkalithkar/.gemini/skills/federate-lakehouse-catalog
+2026-08-15 16:56:38.912 [info] [2026-08-15T16:56:38.912Z] Copied skill enforcing-resource-attribution to /home/rohithkalithkar/.gemini/skills/enforcing-resource-attribution
+2026-08-15 16:56:38.914 [info] [2026-08-15T16:56:38.914Z] Copied skill gcloud-auth-verification to /home/rohithkalithkar/.gemini/skills/gcloud-auth-verification
+2026-08-15 16:56:38.916 [info] [2026-08-15T16:56:38.915Z] Copied skill gcp-composer-troubleshooting to /home/rohithkalithkar/.gemini/skills/gcp-composer-troubleshooting
+2026-08-15 16:56:38.916 [info] [2026-08-15T16:56:38.916Z] Copied skill gcp-data-pipelines to /home/rohithkalithkar/.gemini/skills/gcp-data-pipelines
+2026-08-15 16:56:38.920 [info] [2026-08-15T16:56:38.920Z] Copied skill dataform-bigquery to /home/rohithkalithkar/.gemini/skills/dataform-bigquery
+2026-08-15 16:56:38.926 [info] [2026-08-15T16:56:38.926Z] Copied skill ml-best-practices to /home/rohithkalithkar/.gemini/skills/ml-best-practices
+2026-08-15 16:56:38.927 [info] [2026-08-15T16:56:38.927Z] Copied skill bigquery-sql to /home/rohithkalithkar/.gemini/skills/bigquery-sql
+2026-08-15 16:56:38.930 [info] [2026-08-15T16:56:38.930Z] Copied skill accidental-data-loss-prevention to /home/rohithkalithkar/.gemini/skills/accidental-data-loss-prevention
+2026-08-15 16:56:38.930 [info] [2026-08-15T16:56:38.930Z] Copied skill discovering-gcp-data-assets to /home/rohithkalithkar/.gemini/skills/discovering-gcp-data-assets
+2026-08-15 16:56:38.932 [info] [2026-08-15T16:56:38.932Z] Copied skill managing-python-dependencies to /home/rohithkalithkar/.gemini/skills/managing-python-dependencies
+2026-08-15 16:56:38.932 [info] [2026-08-15T16:56:38.932Z] Copied skill notebook-guidance to /home/rohithkalithkar/.gemini/skills/notebook-guidance
+2026-08-15 16:56:38.951 [info] [2026-08-15T16:56:38.951Z] Copied skill bigquery-data-transfer-service to /home/rohithkalithkar/.gemini/skills/bigquery-data-transfer-service
+2026-08-15 16:56:38.955 [info] [2026-08-15T16:56:38.954Z] Copied skill data-autocleaning to /home/rohithkalithkar/.gemini/skills/data-autocleaning
+2026-08-15 16:56:38.956 [info] [2026-08-15T16:56:38.956Z] Copied skill gcp-pipeline-resource-provisioning to /home/rohithkalithkar/.gemini/skills/gcp-pipeline-resource-provisioning
+2026-08-15 16:56:38.962 [info] [2026-08-15T16:56:38.961Z] Copied skill gcp-managed-airflow-migrations to /home/rohithkalithkar/.gemini/skills/gcp-managed-airflow-migrations
+2026-08-15 16:56:38.969 [info] [2026-08-15T16:56:38.969Z] Copied skill bigquery-bigframes to /home/rohithkalithkar/.gemini/skills/bigquery-bigframes
+2026-08-15 16:56:38.980 [info] [2026-08-15T16:56:38.980Z] Copied skill gcp-spark to /home/rohithkalithkar/.gemini/skills/gcp-spark
+2026-08-15 16:56:38.987 [info] [2026-08-15T16:56:38.987Z] Copied skill gcp-pipeline-orchestration to /home/rohithkalithkar/.gemini/skills/gcp-pipeline-orchestration
+2026-08-15 16:56:38.991 [info] [2026-08-15T16:56:38.991Z] Copied skill gcp-dataflow to /home/rohithkalithkar/.gemini/skills/gcp-dataflow
+2026-08-15 16:56:38.994 [info] [2026-08-15T16:56:38.994Z] Copied skill bigquery-graph to /home/rohithkalithkar/.gemini/skills/bigquery-graph
+2026-08-15 16:56:38.999 [info] [2026-08-15T16:56:38.999Z] Copied skill building-data-apps to /home/rohithkalithkar/.gemini/skills/building-data-apps
+2026-08-15 16:56:39.030 [info] [2026-08-15T16:56:39.030Z] Copied skill bigquery-ai-ml to /home/rohithkalithkar/.gemini/skills/bigquery-ai-ml
+2026-08-15 16:56:39.041 [info] [2026-08-15T16:56:39.040Z] Copied skill gcs-security-assessment to /home/rohithkalithkar/.gemini/skills/gcs-security-assessment
+2026-08-15 16:56:39.044 [info] [2026-08-15T16:56:39.044Z] Finished copying skills to /home/rohithkalithkar/.gemini/skills. Updated 26 skills.
+2026-08-15 16:56:39.050 [info] [2026-08-15T16:56:39.049Z] Installation completed. Manifest updated.
+2026-08-15 16:56:39.059 [info] [2026-08-15T16:56:39.051Z] Syncing telemetry hooks for gemini-code-assist. Telemetry enabled: true
+2026-08-15 16:56:39.077 [info] [2026-08-15T16:56:39.077Z] Hook plugin for gemini-code-assist installed successfully to /home/rohithkalithkar/.gemini/config/plugins/googlecloudtools.datacloud_telemetry
+2026-08-15 16:56:41.297 [info] Identity match check: {"gcloudAccountEmpty":false,"vscodeAccountEmpty":false,"gcloudAdcAccountEmpty":false,"gcloudAccountMatchesVscode":true,"gcloudAdcAccountMatchesVscode":true}
+2026-08-15 16:56:41.388 [info] gcloud version: 579.0.0, isCompatible: true
+2026-08-15 16:56:41.388 [info] Checking if logged in to gcloud...
+2026-08-15 16:56:41.388 [info] Getting gcloud config internal...
+2026-08-15 16:56:41.409 [info] Executing: gcloud config config-helper --format json
+2026-08-15 16:56:45.335 [info] Executing: gcloud auth application-default print-access-token
+2026-08-15 16:56:51.152 [info] Verified that user is logged in to gcloud CLI and ADC.
+2026-08-15 16:56:55.170 [info] hasGcloud: true
+2026-08-15 16:56:55.468 [info] MCP config plugin: ideType: 6
+2026-08-15 16:56:55.469 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-08-15 16:56:55.576 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 16:56:57.221 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-08-15 16:57:01.069 [info] gcloud version: 579.0.0, isCompatible: true
+2026-08-15 16:57:01.071 [info] Checking if logged in to gcloud...
+2026-08-15 16:57:01.073 [info] Getting gcloud config internal...
+2026-08-15 16:57:01.126 [info] Executing: gcloud config config-helper --format json
+2026-08-15 16:57:09.945 [info] Executing: gcloud auth application-default print-access-token
+2026-08-15 16:57:14.594 [info] Verified that user is logged in to gcloud CLI and ADC.
+2026-08-15 17:53:36.433 [info] proactively refreshing access token
+2026-08-15 17:56:55.595 [info] MCP config plugin: ideType: 6
+2026-08-15 17:56:55.599 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 17:57:00.904 [info] MCP config plugin: ideType: 6
+2026-08-15 17:57:00.905 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-08-15 17:57:00.906 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-08-15 17:57:00.940 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 17:57:00.941 [info] MCP config plugin: ideType: 6
+2026-08-15 17:57:00.968 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 17:57:01.162 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-08-15 17:57:01.197 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-08-15 18:52:40.492 [info] proactively refreshing access token
+2026-08-15 18:57:01.030 [info] MCP config plugin: ideType: 6
+2026-08-15 18:57:01.034 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 18:57:05.547 [info] MCP config plugin: ideType: 6
+2026-08-15 18:57:05.547 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-08-15 18:57:05.547 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-08-15 18:57:05.550 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 18:57:05.551 [info] MCP config plugin: ideType: 6
+2026-08-15 18:57:05.552 [info] MCP config plugin: MCP config key: mcpServers
+2026-08-15 18:57:07.227 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-08-15 18:57:07.455 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-08-15 19:32:36.838 [info] Deactivating bigquery
+2026-08-15 19:32:36.838 [info] Deactivating GCS
+2026-08-15 19:32:36.838 [info] Deactivating Databases
+2026-08-15 19:32:36.838 [info] Deactivating Catalog Feature
+2026-08-15 19:32:36.838 [info] Deactivating dataproc
+2026-08-15 19:32:36.838 [info] SparkMonitorPlugin: Deactivating...
+2026-08-15 19:32:36.838 [info] Deactivating settings

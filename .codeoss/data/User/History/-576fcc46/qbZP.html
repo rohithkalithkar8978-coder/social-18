@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOCIAL 18 — Next-Gen Athletics</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <canvas id="canvas3d"></canvas>
+  <div id="bg-overlay" class="bg-overlay"></div>
+
+  <header class="navbar">
+    <div class="logo">SOCIAL <span>18</span></div>
+    <div class="nav-tag">Athletic Performance • Ages 14–18</div>
+    <button class="btn-apple">Join the Arena</button>
+  </header>
+
+  <main class="content">
+    <div class="hero-title">
+      <span class="eyebrow">The Discipline Showcase</span>
+      <h1>Engineered for Greatness.</h1>
+      <p>Select a discipline below to explore performance analytics, biological benefits, and elite match infrastructure.</p>
+    </div>
+
+    <div class="sports-grid">
+      <div class="sport-card" onclick="loadSport('boxing')">
+        <span class="sport-num">01</span>
+        <span class="sport-name">Boxing</span>
+      </div>
+      <div class="sport-card" onclick="loadSport('running')">
+        <span class="sport-num">02</span>
+        <span class="sport-name">Running</span>
+      </div>
+      <div class="sport-card" onclick="loadSport('cycling')">
+        <span class="sport-num">03</span>
+        <span class="sport-name">Cycling</span>
+      </div>
+      <div class="sport-card" onclick="loadSport('cricket')">
+        <span class="sport-num">04</span>
+        <span class="sport-name">Cricket</span>
+      </div>
+      <div class="sport-card" onclick="loadSport('powerlifting')">
+        <span class="sport-num">05</span>
+        <span class="sport-name">Powerlifting</span>
+      </div>
+      <div class="sport-card" onclick="loadSport('badminton')">
+        <span class="sport-num">06</span>
+        <span class="sport-name">Badminton</span>
+      </div>
+      <div class="sport-card" onclick="loadSport('tennis')">
+        <span class="sport-num">07</span>
+        <span class="sport-name">Tennis</span>
+      </div>
+    </div>
+
+    <div id="sport-details" class="details-card hidden">
+      <button class="close-btn" onclick="closeDetails()">✕</button>
+      
+      <div class="details-header">
+        <span id="sport-subtitle" class="eyebrow">Overview</span>
+        <h2 id="sport-title">Sport</h2>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-box">
+          <h4>Health & Physiology</h4>
+          <p id="sport-importance"></p>
+        </div>
+        
+        <div class="spec-box">
+          <h4>Key Benefits</h4>
+          <ul id="sport-benefits"></ul>
+        </div>
+
+        <div class="spec-box full-width">
+          <h4>Infrastructure & Scheduling</h4>
+          <p id="sport-arrangements"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas3d'), alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const geometry = new THREE.IcosahedronGeometry(1.2, 2);
+    const material = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.15,
+      roughness: 0.1
+    });
+    const sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
+    camera.position.z = 4.5;
+
+    const pointLight = new THREE.PointLight(0xffffff, 1);
+    pointLight.position.set(10, 10, 10);
+    scene.add(pointLight);
+
+    let targetCameraZ = 4.5;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      sphere.rotation.y += 0.003;
+      sphere.rotation.x += 0.001;
+      camera.position.z += (targetCameraZ - camera.position.z) * 0.05;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    async function loadSport(sportName) {
+      const res = await fetch(`/api/sport/${sportName}`);
+      const data = await res.json();
+
+      document.getElementById('sport-title').innerText = data.title;
+      document.getElementById('sport-subtitle').innerText = `${data.title} Architecture`;
+      document.getElementById('sport-importance').innerText = data.importance;
+      document.getElementById('sport-arrangements').innerText = data.arrangements;
+
+      const benefitsList = document.getElementById('sport-benefits');
+      benefitsList.innerHTML = '';
+      data.benefits.forEach(b => {
+        const li = document.createElement('li');
+        li.innerText = b;
+        benefitsList.appendChild(li);
+      });
+
+      const bgOverlay = document.getElementById('bg-overlay');
+      bgOverlay.style.backgroundImage = `radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.92) 100%), url('${data.bg_image}')`;
+      bgOverlay.style.opacity = '1';
+
+      targetCameraZ = 3.2;
+      document.getElementById('sport-details').classList.remove('hidden');
+    }
+
+    function closeDetails() {
+      document.getElementById('sport-details').classList.add('hidden');
+      document.getElementById('bg-overlay').style.opacity = '0';
+      targetCameraZ = 4.5;
+    }
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
